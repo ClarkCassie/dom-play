@@ -1,2 +1,2 @@
 # dom-play
-An IT121 Assignment
+A project to practice working with Document Object Model
