@@ -1,1 +1,167 @@
-<h1>DOM Play</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Dom Play</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Dom Play</h1>
+        <h2>Dom Play is a project to practice using the 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank">Document Object Model (DOM).</a></h2>
+        <p id="intro">Here, I take a snippet of script from a film and 
+            use events and event handlers to highlight all of one actors 
+            lines while simultaneously unhighlighting another actors lines 
+            all on the on-click event. Click on any one of the actors 
+            lines to highlight all or their lines on the script. 
+            Click on one of the lines of a different actor to unhighlight 
+            the current lines and highlight the new ones.</p>
+        <div id="play">
+            <h3>Star Wars Episode III<br>
+                Revenge of The Sith</h3>
+        
+            <p><span data-actor="anakin"><strong>ANAKIN:</strong> Don't you see, we don't have to run away anymore? 
+                I have brought peace to the Republic. 
+                I am more powerful than the Chancellor. 
+                I can overthrow him, and together you and I can rule the galaxy. 
+                Make things the way we want them to be.</span></p>
+            <p><span data-actor="padme"><strong>PADME:</strong> I don't believe what I'm hearing ... 
+                Obi-Wan was right. You've changed.</span></p>
+            <p><span data-actor="anakin"><strong>ANAKIN:</strong> I don't want to hear any more about Obi-Wan. 
+                The Jedi turned against me. Don't you turn against me.</span></p>
+            <p><span data-actor="padme"><strong>PADME:</strong> I don't know you anymore. 
+                Anakin, you're breaking my heart. 
+                I'll never stop loving you, 
+                but you are going down a path I can't follow.</span></p>
+            <p><span data-actor="anakin"><strong>ANAKIN:</strong> Because of Obi-Wan?</span></p>
+            <p><span data-actor="padme"><strong>PADME:</strong> Because of what you've done ... 
+                what you plan to do. Stop, stop now. Come back! I love you.</span></p>
+            <p><span data-actor="anakin"><strong>ANAKIN:</strong> Liar!</span></p>
+
+            <!--Scene Description-->
+            <p class="scene">Anakin (seeing Obi-Wan)  Padme turns around and sees Obi-wan 
+                    standing in the doorway of the Naboo Cruiser.</p>
+          
+            <p><span data-actor="padme"><strong>PADME:</strong> No!</span></p>
+            <p><span data-actor="anakin"><strong>ANAKIN:</strong> You're with him. You've betrayed me! 
+                You brought him here to kill me!</span></p>
+            <p><span data-actor="padme"><strong>PADME:</strong> NO! Anakin. I swear ... I ...</span></p>
+            
+            <!--Scene Description-->
+            <p class="scene">Anakin reaches out, and Padme grabs her throat as she starts to choke.</p>
+            
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> Let her go, Anakin.</span></p>
+            <p><span data-actor="anakin"><strong>ANAKIN:</strong> What have you and she been up to?</span></p>
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> Let her go!</span></p>
+            
+            <!--Scene Description-->
+            <p class="scene">Anakin releases his grip on the unconscious PADME and she crumples to the ground.</p>
+           
+            <p><span data-actor="anakin"><strong>ANAKIN:</strong> You turned her against me.</span></p>
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> You have done that yourself.</span></p>
+            <p><span data-actor="anakin"><strong>ANAKIN:</strong> You will not take her from me.</span></p>
+           
+            <!--Scene Description-->
+            <p class="scene">Anakin throws off his cloak.</p>
+           
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> Your anger and your lust for power have already done that.</span></p>
+            
+            <!--Scene Description-->
+            <p class="scene">Obi-wan flings off his cloak.</p>   
+           
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> (continuing) You have allowed this Dark Lord to twist your mind 
+            until now ... until now you have become the very thing you swore to destroy.</span></p>
+            
+            <!--Scene Description-->
+            <p class="scene">They circle each other until Obi-wan is near Padme. He places his hand on her.</p>
+           
+            <p><span data-actor="anakin"><Strong>ANAKIN:</Strong> Don't lecture me, Obi-Wan. I see through the lies of the Jedi. 
+                I do not fear the dark side as you do. I have brought peace, justice, freedom, 
+                and security to my new Empire.</span></p>
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> Your new Empire?</span></p>
+            <p><span data-actor="anakin"><strong>ANAKIN:</strong> Don't make me kill you.</span></p>
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> Anakin, my allegiance is to the Republic ... to democracy.</span></p>
+            <p><span data-actor="anakin"><Strong>ANAKIN:</Strong> If you're not with me, you're my enemy.</span></p>
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> Only a Sith Lord deals in absolutes. I will do what I must. 
+                (ignites his lightsaber)</span></p>
+            <p><span data-actor="anakin"><Strong>ANAKIN:</Strong> You will try.</span></p>
+            
+            <!--Scene Description-->
+            <p class="scene">Anakin ignites his lightsaber.  Anakin lashes out at Obi-wan, and they begin a ferocious sword fight...</p>
+            <p class="scene">Anakin jumps and flips onto OBI-WAN's platform. The fighting continues again until OBI-WAN jumps 
+                toward the safety of the black sandy edge of the lava river. He yells at Anakin.</p>
+
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> It's over, Anakin. I have the high ground.</span></p>
+            <p><span data-actor="anakin"><Strong>ANAKIN:</Strong> You underestimate my power!</span></p>
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> Don't try it.</span></p>
+            
+            <!--Scene Description-->
+            <p class="scene">Anakin follows, and Obi-wan cuts his young apprentice at the knees, 
+                then cuts off his left arm in the blink of an eye. 
+                Anakin tumbles down the embankment and rolls to a stop near the edge of the lava. 
+                Anakin struggles to pull himself up the embankment with his mechanical hand. 
+                His thin leather glove has been burned off. He keeps sliding down in the black sand.</p>
+
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> (continuing) ... You were the Chosen One! 
+                It was said that you would destroy the Sith, not join them. 
+                It was you who would bring balance to the Force, not leave it in Darkness.</span></p>
+            
+            <!--Scene Description-->
+            <p class="scene">Obi-wan picks up Anakin's lightsaber and begins to walk away. He stops and looks back.</p> 
+
+            <p><span data-actor="anakin"><strong>ANAKIN:</strong> I hate you!</span></p>
+            <p><span data-actor="obiwan"><strong>OBI-WAN:</strong> You were my brother, Anakin. I loved you.</span></p>
+
+        </div>
+        <script>
+            
+            
+            const spans = document.querySelectorAll('div#play span');
+
+
+            for(const mySpan of spans){
+                mySpan.addEventListener('click', function(ev){
+                    //alert(mySpan.dataset.actor);
+                    highlightActor(mySpan.dataset.actor);
+                });
+            }
+            
+            
+            
+            
+            function highlightActor(myActor){
+                
+
+                for(const mySpan of spans){
+
+                    if(myActor == mySpan.dataset.actor){
+                        mySpan.style.backgroundColor = 'rgb(216, 226, 240)';
+                    }else{
+                        mySpan.style.backgroundColor = 'transparent';
+                }
+
+                }
+
+                
+                
+                
+            }
+        </script>
+    </body>
+    <footer>
+
+        <!--Validator Link:-->
+
+        <p>&copy; 2021 All Rights Reserved ~ 
+            <a href="https://validator.w3.org/nu/?doc=http://example.com/index.html#textarea" target="_blank">
+                Check HTML</a> ~ <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">Check CSS</a></p>
+
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
+
+    </footer>
+</html>
